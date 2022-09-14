@@ -45,7 +45,6 @@ function App() {
     <Routes>
       <Route path="/" >
         <Route index element={<GetAllTodo />} />
-        <Route path=":success" element={<GetAllTodo />} />
         <Route path="view">
           <Route index element={<GetSingleTodo />} />
         </Route>
