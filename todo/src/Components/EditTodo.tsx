@@ -108,12 +108,12 @@ const EditTodo: React.FC = () => {
 
         await fetch(api_deleteTodoById + todo.id, {
           method: "DELETE",}
-        );
+        )
+        .finally(() => navigate(route_getAllTodo));
 
       }
     
-      deleteData(); 
-      navigate(route_getAllTodo);
+      deleteData();
 
     }
 
